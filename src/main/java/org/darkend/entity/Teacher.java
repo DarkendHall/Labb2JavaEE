@@ -12,7 +12,7 @@ public class Teacher {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long ID;
+    private Long Id;
 
     @NotBlank
     @Size(min = 2)
@@ -25,12 +25,12 @@ public class Teacher {
     public Teacher() {
     }
 
-    public Long getID() {
-        return ID;
+    public Long getId() {
+        return Id;
     }
 
-    public Teacher setID(Long ID) {
-        this.ID = ID;
+    public Teacher setId(Long Id) {
+        this.Id = Id;
         return this;
     }
 
