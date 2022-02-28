@@ -31,7 +31,7 @@ public class TeacherRest {
     public Response addTeacher(Teacher teacher) {
         teacherService.add(teacher);
 
-        return Response.created(URI.create("/labb1/teachers/" + teacher.getId()))
+        return Response.created(URI.create("/labb2/teachers/" + teacher.getId()))
                 .entity(teacher)
                 .build();
     }
