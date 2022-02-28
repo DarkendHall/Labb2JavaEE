@@ -60,16 +60,6 @@ public class SubjectService {
         return entityManager.merge(subject);
     }
 
-    public Subject patch(Long id, Subject subject) {
-        Subject subjectToPatch = get(id);
-
-        validSubject(subject);
-        if (subject.getName() != null)
-            subjectToPatch.setName(subject.getName());
-
-        return subjectToPatch;
-    }
-
     public Subject remove(Subject subject) {
         get(subject.getId());
         entityManager.remove(subject);

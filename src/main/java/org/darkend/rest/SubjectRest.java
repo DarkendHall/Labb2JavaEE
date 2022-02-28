@@ -7,7 +7,6 @@ import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
-import javax.ws.rs.PATCH;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
@@ -31,7 +30,7 @@ public class SubjectRest {
     public Response addSubject(Subject subject) {
         subjectService.add(subject);
 
-        return Response.created(URI.create("/labb1/subjects/" + subject.getId()))
+        return Response.created(URI.create("/labb2/subjects/" + subject.getId()))
                 .entity(subject)
                 .build();
     }
@@ -42,15 +41,6 @@ public class SubjectRest {
         Subject foundSubject = subjectService.get(id);
 
         return Response.ok(foundSubject)
-                .build();
-    }
-
-    @Path("{id}")
-    @PATCH
-    public Response patchSubject(@PathParam("id") Long id, Subject subject) {
-        Subject patchedSubject = subjectService.patch(id, subject);
-
-        return Response.ok(patchedSubject)
                 .build();
     }
 
