@@ -51,4 +51,18 @@ public class Subject {
         this.name = name;
         return this;
     }
+
+    public Subject setStudent(Set<Student> student) {
+        this.student = student;
+        return this;
+    }
+
+    public Teacher getTeacher() {
+        return teacher;
+    }
+
+    public Subject setTeacher(Teacher teacher) {
+        this.teacher = teacher;
+        return this;
+    }
 }
