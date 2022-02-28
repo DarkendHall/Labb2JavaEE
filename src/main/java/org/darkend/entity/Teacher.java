@@ -1,6 +1,8 @@
 package org.darkend.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
@@ -9,7 +11,8 @@ import javax.validation.constraints.Size;
 public class Teacher {
 
     @Id
-    private Long ID;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long Id;
 
     @NotBlank
     @Size(min = 2)
@@ -22,12 +25,12 @@ public class Teacher {
     public Teacher() {
     }
 
-    public Long getID() {
-        return ID;
+    public Long getId() {
+        return Id;
     }
 
-    public Teacher setID(Long ID) {
-        this.ID = ID;
+    public Teacher setId(Long Id) {
+        this.Id = Id;
         return this;
     }
 
