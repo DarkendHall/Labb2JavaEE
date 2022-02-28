@@ -25,15 +25,12 @@ public class Subject {
 
     @NotEmpty
     @ManyToMany(targetEntity = Student.class)
-    Set<Student> student;
+    Set<Student> students;
 
     @NotNull
     @ManyToOne(targetEntity = Teacher.class)
     Teacher teacher;
 
-    public Set<Student> getStudent() {
-        return student;
-    }
 
     public Subject() {
     }
@@ -54,6 +51,10 @@ public class Subject {
     public Subject setName(String name) {
         this.name = name;
         return this;
+    }
+
+    public Set<Student> getStudents() {
+        return students;
     }
 
     public Subject setStudents(Set<Student> student) {
