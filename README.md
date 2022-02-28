@@ -33,19 +33,19 @@ This is the GitHub repository for Laboration 2 in the course "Java Enterprise".
 
 ### ENDPOINTS:
 
-/labb1/students         (addStudent(Student student), POST)
+/labb2/students         (addStudent(Student student), POST)
 
-/labb1/students/{id}    (getStudent(@PathParam("id") Long id), GET)
+/labb2/students/{id}    (getStudent(@PathParam("id") Long id), GET)
 
-/labb1/students/{id}    (patchStudent(@PathParam("id") Long id, Student student), PATCH)
+/labb2/students/{id}    (patchStudent(@PathParam("id") Long id, Student student), PATCH)
 
-/labb1/students/{id}    (updateStudent(@PathParam("id") Long id, Student student), PUT)
+/labb2/students/{id}    (updateStudent(@PathParam("id") Long id, Student student), PUT)
 
-/labb1/students/{id}    (removeStudent(@PathParam("id") Long id, DELETE)
+/labb2/students/{id}    (removeStudent(@PathParam("id") Long id, DELETE)
 
-/labb1/students         (getAllStudents, GET)
+/labb2/students         (getAllStudents, GET)
 
-/labb1/students/query   (getAllStudents(@QueryParam("lastName") String lastName), GET)
+/labb2/students/query   (getAllStudents(@QueryParam("lastName") String lastName), GET)
 
 ### Import for Insomnia
 
