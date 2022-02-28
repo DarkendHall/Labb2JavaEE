@@ -20,7 +20,7 @@ import java.util.Set;
 @Transactional
 public class TeacherService {
 
-    @PersistenceContext(unitName = "labb1")
+    @PersistenceContext(unitName = "labb2")
     private EntityManager entityManager;
 
     @Inject
