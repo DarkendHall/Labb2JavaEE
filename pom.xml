@@ -47,7 +47,7 @@
     </dependencies>
 
     <build>
-        <finalName>labb1</finalName>
+        <finalName>labb2</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
