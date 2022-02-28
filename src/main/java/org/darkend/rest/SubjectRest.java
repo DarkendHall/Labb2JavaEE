@@ -31,7 +31,7 @@ public class SubjectRest {
     public Response addSubject(Subject subject) {
         subjectService.add(subject);
 
-        return Response.created(URI.create("/labb1/subjects/" + subject.getId()))
+        return Response.created(URI.create("/labb2/subjects/" + subject.getId()))
                 .entity(subject)
                 .build();
     }
