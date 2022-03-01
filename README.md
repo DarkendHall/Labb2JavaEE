@@ -24,33 +24,26 @@ This is the GitHub repository for Laboration 2 in the course "Java Enterprise".
 "email": "some@email.address", \
 "id": 123, \
 "phoneNumber": "somephonenumber" (field is a String, and optional) \
-} \
-{ \
-"firstName": "somefirstname", \
-"lastName": "somelastname", \
-"email": "some@email.address", \
-"id": 123, \
-"phoneNumber": "somephonenumber" (field is a String, and optional) \
 }\
 ]\
 }
 
 ### ENDPOINTS:
 
-/labb2/teachers         (addTeacher(Teacher teacher), POST)\
-/labb2/teachers/{id}    (getTeacher(@PathParam("id") Long id), GET)\
-/labb2/teachers/{id}    (patchTeacher(@PathParam("id") Long id, Teacher teacher), PATCH)\
-/labb2/teachers/{id}    (updateTeacher(@PathParam("id") Long id, Teacher teacher), PUT)\
-/labb2/teachers/{id}    (removeTeacher(@PathParam("id") Long id, DELETE)\
-/labb2/teachers         (getAllTeachers, GET)\
-/labb2/teachers/query   (getAllTeachers(@QueryParam("lastName") String lastName), GET)
+/labb2/teachers                 (addTeacher(Teacher teacher), POST)\
+/labb2/teachers/{id}            (getTeacher(@PathParam("id") Long id), GET)\
+/labb2/teachers/{id}            (patchTeacher(@PathParam("id") Long id, Teacher teacher), PATCH)\
+/labb2/teachers/{id}            (updateTeacher(@PathParam("id") Long id, Teacher teacher), PUT)\
+/labb2/teachers/{id}            (removeTeacher(@PathParam("id") Long id), DELETE)\
+/labb2/teachers                 (getAllTeachers(), GET)\
+/labb2/teachers/query           (getAllTeachers(@QueryParam("lastName") String lastName), GET)
 
-/labb2/subjects         (addSubject(Subject subject), POST)\
-/labb2/subjects/{id}    (getSubject(@PathParam("id") Long id), GET)\
-/labb2/subjects/{id}    (updateSubject(@PathParam("id") Long id, Subject subject), PUT)\
-/labb2/subjects/{id}    (removeSubject(@PathParam("id") Long id, DELETE)\
-/labb2/subjects         (getAllSubjects, GET)\
-/labb2/subjects/query   (getAllSubjects(@QueryParam("lastName") String lastName), GET)
+/labb2/subjects                 (addSubject(Subject subject), POST)\
+/labb2/subjects/{id}            (getSubject(@PathParam("id") Long id), GET)\
+/labb2/subjects/{id}            (updateSubject(@PathParam("id") Long id, Subject subject), PUT)\
+/labb2/subjects/{id}            (removeSubject(@PathParam("id") Long id), DELETE)\
+/labb2/subjects                 (getAllSubjects(), GET)\
+/labb2/subjects/{id}/students   (getAllStudentsInSubject(@PathParam("id") Long id), GET)
 
 ### Import for Insomnia
 
