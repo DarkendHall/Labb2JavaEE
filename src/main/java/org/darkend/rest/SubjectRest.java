@@ -23,7 +23,7 @@ public class SubjectRest {
 
 
     @Inject
-    SubjectService subjectService;
+    private SubjectService subjectService;
 
     @Path("")
     @POST

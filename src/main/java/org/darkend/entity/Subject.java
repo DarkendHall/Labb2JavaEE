@@ -25,11 +25,11 @@ public class Subject {
 
     @NotEmpty
     @ManyToMany(targetEntity = Student.class)
-    Set<Student> students;
+    private Set<Student> students;
 
     @NotNull
     @ManyToOne(targetEntity = Teacher.class)
-    Teacher teacher;
+    private Teacher teacher;
 
 
     public Subject() {

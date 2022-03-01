@@ -25,7 +25,7 @@ public class StudentRest {
 
 
     @Inject
-    StudentService studentService;
+    private StudentService studentService;
 
     @Path("")
     @POST
