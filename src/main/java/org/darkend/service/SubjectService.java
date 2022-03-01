@@ -1,6 +1,7 @@
 package org.darkend.service;
 
 
+import org.darkend.entity.Student;
 import org.darkend.entity.Subject;
 import org.darkend.exception.IllegalActionException;
 
@@ -75,6 +76,12 @@ public class SubjectService {
     public List<Subject> getAll() {
 
         return entityManager.createQuery("SELECT s FROM Subject s", Subject.class)
+                .getResultList();
+    }
+
+    public List<Student> getAllStudents(Long id) {
+        return entityManager.createQuery("SELECT su.students FROM Subject su WHERE su.id = :id", Student.class)
+                .setParameter("id", id)
                 .getResultList();
     }
 
