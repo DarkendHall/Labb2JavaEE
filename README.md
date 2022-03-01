@@ -1,6 +1,8 @@
-## Laboration 1
+## Laboration 2
 
 This is the GitHub repository for Laboration 2 in the course "Java Enterprise".
+
+Student and teacher need to be created before subject.
 
 ### Format for Teacher JSON is:
 
