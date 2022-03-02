@@ -7,6 +7,7 @@ Student and teacher need to be created before subject.
 ### Format for Teacher JSON is:
 
 {\
+"id": 123, (Only required when updating existing teacher)
 "firstName": "teacherFirstName",\
 "lastName": "teacherLastName"\
 }
@@ -14,8 +15,10 @@ Student and teacher need to be created before subject.
 ### Format for Subject JSON is:
 
 {\
+"id": 123, (Only required when updating existing subject)\
 "name": "subjectName",\
 "teacher": {\
+"id": 123, \
 "firstName": "teacherFirstName",\
 "lastName": "teacherLastName"\
 },\
