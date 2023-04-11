@@ -1,3 +1,5 @@
+# This project is now archived!
+
 ## Laboration 2
 
 This is the GitHub repository for examination 2 in the course "Java Enterprise".
